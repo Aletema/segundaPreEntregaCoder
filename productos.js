@@ -8,6 +8,17 @@ btnCart.addEventListener('click', () => {
 });
 
 /* ========================= */
+// Clase "molde" para los productos de nuestra aplicación
+class Producto {
+    constructor(id, nombre, precio, categoria, imagen) {
+      this.id = id;
+      this.nombre = nombre;
+      this.precio = precio;
+      this.categoria = categoria;
+      this.imagen = imagen;
+    }
+  }
+
 const cartInfo = document.querySelector('.cart-product');
 const rowProduct = document.querySelector('.row-product');
 
